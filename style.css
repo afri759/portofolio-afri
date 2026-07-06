@@ -1,0 +1,35 @@
+/* Gaya Utama Tombol */
+.btn-download {
+  padding: 10px 24px;
+  border-radius: 50px; /* Membuat sudut tombol melingkar (rounded) */
+  transition: all 0.3s ease; /* Kunci dari animasi halus */
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Efek saat Kursor Di atas Tombol (Hover) */
+.btn-download:hover {
+  transform: translateY(-3px); /* Tombol sedikit terangkat naik */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Bayangan lebih tebal */
+}
+
+/* Efek Animasi pada Ikon Download */
+.btn-download:hover .icon-download {
+  animation: bounceDown 0.6s infinite alternate;
+}
+
+/* Efek saat Tombol Diklik (Active) */
+.btn-download:active {
+  transform: translateY(-1px); /* Tombol agak turun sedikit saat ditekan */
+}
+
+/* Animasi Naik Turun untuk Ikon */
+@keyframes bounceDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(4px);
+  }
+}
